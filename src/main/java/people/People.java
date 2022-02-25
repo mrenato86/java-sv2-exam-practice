@@ -14,7 +14,7 @@ public class People {
                     .filter(line -> line.contains(",Male,"))
                     .count();
         } catch (IOException ioe) {
-            throw new IllegalStateException("File reading error!");
+            throw new IllegalStateException("File reading error!", ioe);
         }
     }
 }
