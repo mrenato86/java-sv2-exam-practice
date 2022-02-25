@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DogTypes {
 
-    JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     public DogTypes(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
